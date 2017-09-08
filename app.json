@@ -1,0 +1,23 @@
+{
+  "name": "tests-heroku",
+  "scripts": {
+  },
+  "env": {
+    "IS_HEROKU_TEST": {
+      "required": true
+    },
+    "TIMES": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
